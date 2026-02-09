@@ -1,0 +1,11 @@
+name: CI Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lint with flake8
+        run: echo "Linting step for Task 2"
+      - name: Test with pytest
+        run: echo "Testing step for Task 3"
